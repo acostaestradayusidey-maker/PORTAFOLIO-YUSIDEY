@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Diseño Gráfico</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+    font-family:Poppins;
+    background:#f5f5f5;
+    color:#111;
+    overflow-x:hidden;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    z-index:10;
+}
+nav h1{font-family:Playfair Display;font-size:24px;}
+nav a{margin-left:30px;text-decoration:none;color:#111;font-weight:600}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:linear-gradient(120deg,#ff4d6d,#ffbe0b,#3a86ff);
+    color:white;
+    display:flex;
+    align-items:center;
+    padding:0 8%;
+}
+.hero h2{
+    font-size:110px;
+    font-family:Playfair Display;
+    line-height:95px;
+}
+.hero p{
+    margin-top:20px;
+    font-size:20px;
+    width:500px;
+}
+
+/* SECTION GENERAL */
+section{
+    padding:120px 8%;
+    background:white;
+}
+.title{
+    font-size:60px;
+    font-family:Playfair Display;
+    margin-bottom:40px;
+}
+
+/* GRID PROYECTOS */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+}
+.card{
+    background:#fff;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    transition:.4s;
+}
+.card:hover{
+    transform:translateY(-10px);
+    background:#111;
+    color:white;
+}
+.card h3{font-size:28px;margin-bottom:10px}
+
+/* BLOQUE HORIZONTAL */
+.banner{
+    background:#111;
+    color:white;
+    padding:150px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.banner h2{
+    font-size:70px;
+    font-family:Playfair Display;
+}
+.banner span{color:#ff4d6d}
+
+/* SOBRE MI */
+.about{
+    display:flex;
+    gap:80px;
+    align-items:center;
+}
+.about img{
+    width:400px;
+    border-radius:20px;
+}
+.about p{font-size:18px;line-height:30px}
+
+/* CONTACTO */
+.contact{
+    background:linear-gradient(120deg,#3a86ff,#8338ec);
+    color:white;
+    text-align:center;
+}
+.contact h2{font-size:70px;font-family:Playfair Display}
+.contact button{
+    margin-top:30px;
+    padding:15px 40px;
+    border:none;
+    background:white;
+    color:#111;
+    font-weight:bold;
+    border-radius:30px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    padding:30px;
+    text-align:center;
+    background:#111;
+    color:#aaa;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>PORTFOLIO: ACOSTA ESTRADA YUSIDEY</h1>
+<div>
+<a href="#">Inicio</a>
+<a href="#">Proyectos</a>
+<a href="#">Sobre mí</a>
+<a href="#">Contacto</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div>
+<h2>DISEÑO<br>GRÁFICO</h2>
+<p>Diseño editorial creativo, ilustración, fotografía, diseño análogo. Portafolio de diseño que conecta, crea e innova.</p>
+</div>
+</section>
+
+<!-- PROYECTOS -->
+<section>
+<h2 class="title">Proyectos Destacados</h2>
+<div class="grid">
+<div class="card">
+<h3>Ilustración Editorial</h3>
+<p>Ilustraciones para libros elaborados para diferentes públicos. </p>
+</div>
+
+<div class="card">
+<h3>Fotografías </h3>
+<p>Fotografias atractivas de impacto y armonía visual.</p>
+</div>
+
+<div class="card">
+<h3>Dibujos creativos</h3>
+<p>Dibujos y toque personal en cada trazo con diferentes técnicas.</p>
+</div>
+
+<div class="card">
+<h3>Diseño artesanal</h3>
+<p>Diseño de grabados, pinturas en acuarela, diseño de boldas de manta.</p>
+</div></div>
+</section>
+
+<!-- BANNER -->
+<section class="banner">
+<h2>Diseño que <span>conecta</span></h2>
+<p>Creatividad + técnica + estética.</p>
+</section>
+
+<!-- SOBRE MI -->
+<section>
+<h2 class="title">Sobre mí</h2>
+<div class="about">
+<img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12">
+<p>Soy una diseñadora gráfica especializada en dieño editorial, ulustración, material didáctico, diseño digital. Me apasiona crear experiencias visuales que comuniquen ideas y generen un alto impacto.</p>
+</div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contact">
+<h2>Trabajemos juntos</h2>
+<p>Disponible para proyectos freelance y colaboraciones.</p>
+<button>Contactar
+</button> 
+</section>
+
+<footer>
+© 2026 Portfolio Diseño Gráfico
+</footer>
+
+</body>
+</html>
